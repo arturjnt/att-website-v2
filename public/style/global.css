@@ -75,3 +75,14 @@
     max-width: 900px;
     align-self: center;
 }
+
+/* Fills for svg */
+.fill-orange {
+    fill: theme('colors.orange.DEFAULT');
+}
+.fill-orange-light {
+    fill: theme('colors.orange.light');
+}
+.fill-orange-dark {
+    fill: theme('colors.orange.dark');
+}
