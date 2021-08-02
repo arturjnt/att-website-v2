@@ -1,6 +1,26 @@
-button:hover + .subset {
-    display: inline-block;
-    position: relative;
-    top: 0;
-    left: 0;
+button:focus + .subset {
+    display: block;
+}
+
+.subset > div:first-of-type {
+    padding-top: 0px;
+}
+
+.subset > div:last-of-type {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.sub {
+    font-family: Kollektif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.subsub {
+    font-family: Hind;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
 }

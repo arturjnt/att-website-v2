@@ -5,12 +5,14 @@ function readSubs (sub) {
     return sub.map (s => {
         let add = '';
         if (s.subset && s.subset.length > 0) {
-            s.subset.forEach(s => add += s.name);
+            s.subset.forEach(s => add += `<li>${s.name}</li>`);
         }
-        return <div>{s.name} <span>{add}</span></div>;
+        return  <div class="sub py-4 border-b-2 border-blue-dark border-opacity-20">{s.name}
+                    <div class="subsub my-1 ml-3"><ul class="list-disc list-inside">{add}</ul></div>
+                </div>;
     })
 }
 ---
-<div class="subset hidden">
+<div class="subset hidden mx-4 my-5">
     {readSubs(subset)}
 </div>
