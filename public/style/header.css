@@ -19,6 +19,7 @@
 }
 
 .title {
+    text-transform: uppercase;
     /* Start figma here */
     font-family: Norwester;
     font-size: 80px;
@@ -53,7 +54,7 @@
     text-align: left;
 }
 
-button {
+button.header-b {
     text-transform: capitalize;
     /* Start figma here */
     font-family: Norwester;

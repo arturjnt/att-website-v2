@@ -1,9 +1,75 @@
-[
-    "Web",
-    "Mobile",
-    "Infrastructure",
-    "CI/CD",
-    "Database",
-    "Management",
-    "IT Sec"
+[{
+        "name": "Web",
+        "class": "bg-orange-dark",
+        "subset": [
+            { "name": "HTML" },
+            {
+                "name": "CSS",
+                "subset": [
+                    { "name": "SASS" }
+                ]
+            },
+            {
+                "name": "Javascript",
+                "subset": [
+                    { "name": "Node.js" },
+                    { "name": "Vue.js" }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Mobile",
+        "class": "bg-orange",
+        "subset": [
+            { "name": "Dart" },
+            { "name": "Flutter" }
+        ]
+    },
+    {
+        "name": "Infrastructure",
+        "class": "bg-orange-light",
+        "subset": [
+            { "name": "AWS (S3, EC2, etc)" },
+            { "name": "OVH (VPS)" }
+        ]
+    },
+    {
+        "name": "CI/CD",
+        "class": "bg-orange",
+        "subset": [
+            { "name": "Jenkins" }
+        ]
+    },
+    {
+        "name": "Database",
+        "class": "bg-orange",
+        "subset": [
+            { "name": "NoSQL" },
+            { "name": "SQL" },
+            { "name": "Firebase" }
+        ]
+    },
+    {
+        "name": "Management Tech",
+        "class": "bg-orange-light",
+        "subset": [
+            { "name": "Git" },
+            { "name": "JIRA" },
+            { "name": "Trello" },
+            { "name": "Miro" },
+            { "name": "ProductBoard" },
+            { "name": "Draw.io" }
+        ]
+    },
+    {
+        "name": "Security Advisory",
+        "class": "bg-orange",
+        "subset": [
+            { "name": "GDPR (DPIAs)" },
+            { "name": "ISO Certifications" },
+            { "name": "Pen-Testing" },
+            { "name": "Cookie law" }
+        ]
+    }
 ]

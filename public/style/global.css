@@ -86,3 +86,14 @@
 .fill-orange-dark {
     fill: theme('colors.orange.dark');
 }
+
+/* BG for buttons */
+.bg-orange {
+    background-color: theme('colors.orange.DEFAULT');
+}
+.bg-orange-light {
+    background-color: theme('colors.orange.light');
+}
+.bg-orange-dark {
+    background-color: theme('colors.orange.dark');
+}

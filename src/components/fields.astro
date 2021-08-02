@@ -11,7 +11,11 @@ const { skills } = Astro.props;
     </div>
     <div>
         {skills.map(skill => 
-            <span class="mx-1.5">{skill}</span>
+            <span class="mx-1.5">
+                <button class="{`text-white ${skill.class}`}">{skill.name}</button>
+            </span>
         )}
     </div>
 </Wrapper>
+<style>
+</style>
