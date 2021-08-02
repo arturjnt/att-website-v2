@@ -1,5 +1,6 @@
 ---
 import Favicon from '../components/helpers/favicon.astro';
+import Skills from '../components/helpers/skills.json';
 
 import Header from '../components/header.astro';
 import How from '../components/how.astro';
@@ -15,12 +16,13 @@ import Footer from '../components/footer.astro';
     <Favicon />    
     <link rel="stylesheet" href="/style/global.css">
     <link rel="stylesheet" href="/style/header.css">
+    <link rel="stylesheet" href="/style/comp.css">
 </head>
 <body>
     <div class="full-page">
       <Header />
       <How />
-      <Fields />
+      <Fields skills="{Skills}" />
       <Footer client:load />
     </div>
 </body>

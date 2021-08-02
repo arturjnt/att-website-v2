@@ -1,6 +1,17 @@
 ---
 import Wrapper from './helpers/wrapper.astro';
+
+const { skills } = Astro.props;
 ---
-<Wrapper extraMainClasses="bg-blue-light">
-    <div>fields</div>
+<Wrapper extraMainClasses="py-16 bg-blue-light text-blue">
+    <div class="title-comp">fields of expertise</div>
+    <div class="sub-title-comp">Web and Mobile Multiplatform Android</div>
+    <div class="content">
+        I've been through every job on the field, from a ticket-grabbing developer, through full-stack, infrastructure, database management, continuous delivery, frontend and backend engineering, and even information security.
+    </div>
+    <div>
+        {skills.map(skill => 
+            <span class="mx-1.5">{skill}</span>
+        )}
+    </div>
 </Wrapper>

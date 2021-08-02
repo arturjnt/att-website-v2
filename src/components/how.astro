@@ -3,9 +3,9 @@ import Wrapper from './helpers/wrapper.astro';
 import Chat from '../../public/icons/chat.astro';
 ---
 <Wrapper extraMainClasses="py-16 text-blue">
-    <div class="title">how i work</div>
-    <div class="sub-title">"Pragmatic solutions for your problems."</div>
-    <div class="content my-8">I believe all challenges should be dealt sensibly and realistically, in a way that is based on practicality rather than theoretical considerations. Quality is the name of the game here, all deliverables will be up to the highest standard.</div>
+    <div class="title-comp">how i work</div>
+    <div class="sub-title-comp">"Pragmatic solutions for your problems."</div>
+    <div class="content">I believe all challenges should be dealt sensibly and realistically, in a way that is based on practicality rather than theoretical considerations. Quality is the name of the game here, all deliverables will be up to the highest standard.</div>
     <div class="grid grid-cols-1 sm:grid-cols-3">
         <div class="mx-4">
             <div class="flex justify-center"><Chat fcolor="orange-light"/></div>
@@ -31,41 +31,6 @@ import Chat from '../../public/icons/chat.astro';
     </div>
 </Wrapper>
 <style>
-    .title {
-        text-transform: capitalize;
-        /* Figma starts here */
-        font-family: Norwester;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 60px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-    
-    .sub-title {
-        text-transform: uppercase;
-        /* Figma starts here */
-        font-family: Kollektif;
-        font-size: 21px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0em;
-        text-align: left;
-    }
-    
-    .content {
-        /* Figma starts here */
-        font-family: Hind;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: justify;
-    }
-
     .icon-title {
         text-align: center;
         text-transform: capitalize;
@@ -79,6 +44,7 @@ import Chat from '../../public/icons/chat.astro';
     }
     
     .icon-content {
+        text-align: justify;
         /* Figma starts here */
         font-family: Hind;
         font-size: 16px;
