@@ -10,12 +10,21 @@ const { skills } = Astro.props;
         I've been through every job on the field, from a ticket-grabbing developer, through full-stack, infrastructure, database management, continuous delivery, frontend and backend engineering, and even information security.
     </div>
     <div>
-        {skills.map(skill => 
-            <span class="mx-1.5">
-                <button class="{`text-white ${skill.class}`}">{skill.name}</button>
-            </span>
+        {skills.map(skill =>
+            <button class="{`mx-1.5 mb-2.5 py-2.5 px-7 text-white ${skill.class}`}">{skill.name}</button>
         )}
     </div>
 </Wrapper>
 <style>
+button {
+    border-radius: 100px;
+    /* Figma starts here */
+    font-family: Norwester;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
 </style>
