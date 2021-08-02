@@ -1,0 +1,77 @@
+#header {
+    background-image: url('/assets/bg-hero.jpg');
+    background-size: cover;
+    background-position: right;
+    mix-blend-mode: exclusion;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+
+#header::before {
+    background: linear-gradient(260deg, rgba(255, 255, 255, 0.5) 15%, #2F3644 50%);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: 100%;
+}
+
+.title {
+    /* Start figma here */
+    font-family: Norwester;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    /* Start figma here */
+    font-family: Kollektif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.subsubtitle {
+    text-transform: uppercase;
+    /* Start figma here */
+    font-family: Kollektif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+button {
+    text-transform: capitalize;
+    /* Start figma here */
+    font-family: Norwester;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    /* End figma here */
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    border-radius: 100px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+}

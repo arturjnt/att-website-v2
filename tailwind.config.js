@@ -8,7 +8,7 @@ module.exports = {
             black: '#000000',
             white: '#FFFFFF',
             orange: { light: '#EEC170', DEFAULT: '#F2A65A', dark: '#F58549' },
-            blue: { DEFAULT: '#464E5F', dark: '#2F3644' }
+            blue: { light: 'rgba(70, 78, 95, 0.05)', DEFAULT: '#464E5F', dark: '#2F3644' }
         }
     }
 };
