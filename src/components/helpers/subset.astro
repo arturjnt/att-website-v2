@@ -1,6 +1,16 @@
 ---
 const { subset } = Astro.props;
+
+function readSubs (sub) {
+    return sub.map (s => {
+        let add = '';
+        if (s.subset && s.subset.length > 0) {
+            add += <div>{readSubs(s.subset)}</div>;
+        }
+        return <div>{s.name} <span>{add}</span></div>;
+    })
+}
 ---
 <div class="subset hidden">
-    {JSON.stringify(subset)}
+    {readSubs(subset)}
 </div>
