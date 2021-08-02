@@ -1,5 +1,6 @@
 ---
 import Wrapper from './helpers/wrapper.astro';
+import Subset from './helpers/subset.astro';
 
 const { skills } = Astro.props;
 ---
@@ -11,7 +12,13 @@ const { skills } = Astro.props;
     </div>
     <div>
         {skills.map(skill =>
-            <button class="{`mx-1.5 mb-2.5 py-2.5 px-7 text-white ${skill.class}`}">{skill.name}</button>
+            <span>
+                <button class="{`w-full sm:w-auto mx-1.5 mb-2.5 py-2.5 px-7 text-white ${skill.class}`}">
+                    <span class="underline">{skill.name}</span>
+                    <span>▼</span>
+                </button>
+                <Subset subset="{skill.subset}" />
+            </span>
         )}
     </div>
 </Wrapper>
