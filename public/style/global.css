@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "Norwester";
+    src: url("/fonts/norwester/norwester.otf");
+    /* src: url("https://yoursite.com/css/fonts/CustomFont.woff") format("woff"), url("https://yoursite.com/css/fonts/CustomFont.otf") format("opentype"), url("https://yoursite.com/css/fonts/CustomFont.svg#filename") format("svg"); */
+}
+
+@font-face {
+    font-family: "Kollektif";
+    src: url("/fonts/kollektif/Kollektif.ttf");
+}
+
+@font-face {
+    font-family: "Kollektif";
+    src: url("/fonts/kollektif/Kollektif-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Kollektif";
+    src: url("/fonts/kollektif/Kollektif-BoldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Kollektif";
+    src: url("/fonts/kollektif/Kollektif-Italic.ttf");
+    font-style: italic;
+}
+
+.full-page {
+    /* TODO: should be 320 */
+    min-width: 375px;
+}
+
+.my-container {
+    @tailwind p-8;
+    display: flex;
+    flex-direction: column;
+}
+
+.mw {
+    @tailwind mb-8;
+    max-width: 900px;
+    align-self: center;
+}

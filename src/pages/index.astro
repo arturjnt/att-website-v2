@@ -1,0 +1,26 @@
+---
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import Favicon from '../components/favicon.astro';
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="application-name" content="Artur Teixeira"/>
+    <title>Artur Teixeira - Freelance Software Engineer</title>
+    <Favicon />    
+    <link rel="stylesheet" href="/style/global.css">
+</head>
+<body>
+    <div class="full-page">
+      <Header />
+      <!-- TODO: <div class="my-container">
+        <HowIWork client:visible class="mw" />
+        <AboutMe class="mw p-4 border-2" />
+        <Contact client:visible class="mw p-4 border-2 w-full" />
+      </div> -->
+      <Footer client:load />
+    </div>
+</body>
+</html>
