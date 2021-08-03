@@ -25,7 +25,7 @@
         </div>
         <div class="mygrid">
           <div class="main-label">Areas of Interest</div>
-          <div class="ml-2">
+          <div class="ml-2 sm:col-span-2">
             <div v-for="(area, index) in skills" :key="index" class="my-4">
               <input
                 :id="area.name"
@@ -106,11 +106,11 @@ export default {
 </script>
 <style>
 .mygrid {
-  @apply my-5;
+  @apply my-5 sm:grid sm:grid-cols-4 sm:mb-6;
 }
 
 .main-label {
-  @apply mb-5 block w-full;
+  @apply mb-5 w-full sm:text-right sm:pr-6 sm:mb-0;
   text-transform: uppercase;
   /* Start figma here */
   font-family: Norwester;
@@ -119,7 +119,6 @@ export default {
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 .main-label > span {
@@ -128,6 +127,7 @@ export default {
 
 input[type="email"],
 input[type="text"] {
+  @apply sm:col-span-2;
   background-color: theme("colors.blue.fields");
   border-bottom-color: theme("colors.grey.DEFAULT");
   border-bottom-width: 1px;
@@ -149,6 +149,7 @@ input[type="checkbox"] {
 }
 
 textarea {
+  @apply sm:col-span-3;
   height: 140px;
   width: 100%;
   border: 1px solid theme("colors.grey.DEFAULT");
