@@ -34,7 +34,7 @@
                 v-model="areasToSubmit"
               />
               <label class="check-label ml-6" :for="area.name">
-                {{area.name}}
+                {{ area.name }}
               </label>
             </div>
           </div>
@@ -106,11 +106,11 @@ export default {
 </script>
 <style>
 .mygrid {
-  @apply my-6;
+  @apply my-5;
 }
 
 .main-label {
-  @apply mb-6 block w-full;
+  @apply mb-5 block w-full;
   text-transform: uppercase;
   /* Start figma here */
   font-family: Norwester;
@@ -128,7 +128,7 @@ export default {
 
 input[type="email"],
 input[type="text"] {
-  background-color: theme("colors.blue.text");
+  background-color: theme("colors.blue.fields");
   border-bottom-color: theme("colors.grey.DEFAULT");
   border-bottom-width: 1px;
   width: 100%;
@@ -146,6 +146,15 @@ input[type="checkbox"] {
   line-height: 29px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+textarea {
+  height: 140px;
+  width: 100%;
+  border: 1px solid theme("colors.grey.DEFAULT");
+  background-color: theme("colors.blue.fields");
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 
 button {
