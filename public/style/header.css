@@ -54,25 +54,14 @@
     text-align: left;
 }
 
-button.header-b {
+a.header-b {
     text-transform: capitalize;
     /* Start figma here */
     font-family: Norwester;
     font-size: 28px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0em;
     text-align: left;
     /* End figma here */
-    text-align: left;
-    display: flex;
-    flex-direction: row;
     padding: 10px 20px;
     border-radius: 100px;
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 10px 0px;
 }
