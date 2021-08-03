@@ -4,8 +4,9 @@
     class="my-container p-4 sm:px-14 py-16 bg-blue-light text-blue"
   >
     <div class="mw w-full">
-      <div class="title-comp mb-9">contact</div>
+      <div class="title-comp mb-4">contact</div>
       <form
+        class="flex flex-col"
         accept-charset="UTF-8"
         v-on:submit.prevent="onSubmit()"
         method="POST"
@@ -44,11 +45,10 @@
             required="required"
           ></textarea>
         </div>
-        <div class="border-b-2 border-blue-900" />
         <div class="mt-4 font-bold text-green-600" v-if="isSuccess">
           I received your submission, thank you!
         </div>
-        <button type="submit">Send Contact</button>
+        <button type="submit">Send</button>
       </form>
     </div>
   </div>
@@ -103,6 +103,10 @@ export default {
 };
 </script>
 <style>
+.mygrid {
+  @apply my-6;
+}
+
 .main-label {
   @apply block w-full;
   text-transform: uppercase;
@@ -118,5 +122,31 @@ export default {
 
 .main-label > span {
   @apply text-orange;
+}
+
+input[type="email"],
+input[type="text"] {
+  background-color: theme("colors.blue.text");
+  border-bottom-color: theme("colors.grey.DEFAULT");
+  border-bottom-width: 1px;
+  width: 100%;
+}
+
+button {
+  @apply bg-orange;
+
+  font-family: Norwester;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+
+  text-transform: capitalize;
+
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 10px 70px;
+
+  align-self: center;
 }
 </style>
