@@ -25,15 +25,17 @@
         </div>
         <div class="mygrid">
           <div class="main-label">Areas of Interest</div>
-          <div>
-            <div v-for="(area, index) in skills" :key="index">
+          <div class="ml-2">
+            <div v-for="(area, index) in skills" :key="index" class="my-4">
               <input
                 :id="area.name"
                 type="checkbox"
                 :value="area.name"
                 v-model="areasToSubmit"
               />
-              <label :for="area">{{ area.name }}</label>
+              <label class="check-label ml-6" :for="area.name">
+                {{area.name}}
+              </label>
             </div>
           </div>
         </div>
@@ -108,7 +110,7 @@ export default {
 }
 
 .main-label {
-  @apply block w-full;
+  @apply mb-6 block w-full;
   text-transform: uppercase;
   /* Start figma here */
   font-family: Norwester;
@@ -130,6 +132,20 @@ input[type="text"] {
   border-bottom-color: theme("colors.grey.DEFAULT");
   border-bottom-width: 1px;
   width: 100%;
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+}
+
+.check-label {
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 button {
