@@ -27,8 +27,8 @@ import Footer from '../components/footer.astro';
       <How />
       <Fields skills="{Skills}" />
       <About />
-      <Contact skills="{Skills}" />
-      <Footer client:load />
+      <Contact skills="{Skills}" client:visible />
+      <Footer />
     </div>
 </body>
 </html>
