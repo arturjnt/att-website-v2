@@ -12,25 +12,6 @@
 }
 
 @font-face {
-    font-family: "Kollektif";
-    src: url("/fonts/kollektif/Kollektif-Bold.ttf");
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: "Kollektif";
-    src: url("/fonts/kollektif/Kollektif-BoldItalic.ttf");
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Kollektif";
-    src: url("/fonts/kollektif/Kollektif-Italic.ttf");
-    font-style: italic;
-}
-
-@font-face {
     font-family: "Hind";
     src: url("/fonts/hind/hind-regular.otf");
 }

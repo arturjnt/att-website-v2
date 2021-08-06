@@ -12,16 +12,16 @@
         method="POST"
       >
         <div class="mygrid">
-          <label class="main-label">Email address<span>*</span></label>
-          <input type="email" v-model="email" required="required" />
+          <label class="main-label" for="email">Email address<span>*</span></label>
+          <input id="email" type="email" v-model="email" required="required" />
         </div>
         <div class="mygrid">
-          <label class="main-label">Name<span>*</span></label>
-          <input type="text" v-model="name" required="required" />
+          <label class="main-label" for="name">Name<span>*</span></label>
+          <input id="name" type="text" v-model="name" required="required" />
         </div>
         <div class="mygrid">
-          <label class="main-label">Company Name </label>
-          <input type="text" v-model="cname" />
+          <label class="main-label" for="company_name">Company Name </label>
+          <input id="company_name" type="text" v-model="cname" />
         </div>
         <div class="mygrid">
           <div class="main-label">Areas of Interest</div>
@@ -57,8 +57,9 @@
           </div>
         </div>
         <div class="mygrid">
-          <label class="main-label">Message<span>*</span></label>
+          <label class="main-label" for="message">Message<span>*</span></label>
           <textarea
+            id="message"
             type="text"
             v-model="message"
             required="required"
