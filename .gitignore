@@ -19,3 +19,9 @@ yarn-error.log*
 
 # Own
 src/components/_old
+
+# Secrets
+firestore.rules
+.firebaserc
+functions/src/index.ts
+functions/att-website-dc55b-firebase-adminsdk-24g0u-c849dec09a.json

@@ -1,0 +1,13 @@
+# Compiled JavaScript files
+lib/**/*.js
+lib/**/*.js.map
+
+# TypeScript v1 declaration files
+typings/
+
+# Node.js dependency directory
+node_modules/
+
+# Secrets
+src/index.ts
+att-website-dc55b-firebase-adminsdk-24g0u-c849dec09a.json

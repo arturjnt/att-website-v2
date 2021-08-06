@@ -47,7 +47,10 @@
             required="required"
           ></textarea>
         </div>
-        <div class="mt-4 font-bold text-green-600" v-if="isSuccess">
+        <div
+          class="m-4 text-center text-orange-dark"
+          v-show="isSuccess"
+        >
           I received your submission, thank you!
         </div>
         <button type="submit">Send</button>
@@ -80,15 +83,16 @@ export default {
           .replaceAll(",", ", ")}
         Message: ${this.message}`;
 
-      this.$fire.firestore
-        .collection("mail")
-        .add({
-          to: "info@artur-teixeira.tech",
-          message: {
-            subject: "Website Lead",
-            text: data,
-          },
-        })
+      // use xml http request
+      fetch(
+        "https://us-central1-att-website-dc55b.cloudfunctions.net/addEmail",
+        {
+          method: "POST",
+          headers: { "Content-Type": "text/plain" },
+          body: data,
+        }
+      )
+        .then((response) => response.json())
         .then((docRef) => {
           this.isSuccess = docRef.id ? true : false;
           this.email = "";

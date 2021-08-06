@@ -1,0 +1,26 @@
+import * as functions from "firebase-functions";
+import * as admin from "firebase-admin";
+
+var serviceAccount = require("../serviceAccount.json.example"); //eslint-disable-line
+
+// Init and signIn on Firebase
+admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+    databaseURL: "https://att-website-*****.firebaseio.com",
+});
+
+exports.addEmail = functions.https.onRequest(async (req, res) => {
+    res.set("Access-Control-Allow-Origin", "https://artur-teixeira.tech/");
+    res.set("Access-Control-Allow-Headers", "Content-Type");
+
+    // Push the new message into Firestore using the Firebase Admin SDK.
+    const writeResult = await admin.firestore().collection("mail").add({
+        to: "info@artur-teixeira.tech",
+        message: {
+            subject: "Website Lead",
+            text: req.body,
+        },
+    });
+    // Send back a message that we've successfully written the message
+    res.json({id: writeResult.id});
+});
