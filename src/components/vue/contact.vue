@@ -25,16 +25,33 @@
         </div>
         <div class="mygrid">
           <div class="main-label">Areas of Interest</div>
-          <div class="ml-2 sm:col-span-2">
-            <div v-for="(area, index) in skills" :key="index" class="my-4">
-              <input
-                :id="area.name"
-                type="checkbox"
-                :value="area.name"
-                v-model="areasToSubmit"
-              />
-              <label class="check-label ml-6" :for="area.name">
-                {{ area.name }}
+          <div class="sm:ml-2 sm:col-span-2">
+            <div v-for="(area, index) in skills" :key="index">
+              <label class="checkbox check-label" :for="area.name">
+                <span class="checkbox__input">
+                  <input
+                    :id="area.name"
+                    type="checkbox"
+                    :value="area.name"
+                    v-model="areasToSubmit"
+                  />
+                  <span class="checkbox__control">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2.5"
+                        d="M 2 13 l 6.37 6.37 L 22 6"
+                      />
+                    </svg>
+                  </span>
+                </span>
+                <span class="check-label ml-5">{{ area.name }}</span>
               </label>
             </div>
           </div>
@@ -47,10 +64,7 @@
             required="required"
           ></textarea>
         </div>
-        <div
-          class="m-4 text-center text-orange-dark"
-          v-show="isSuccess"
-        >
+        <div class="m-4 text-center text-orange-dark" v-show="isSuccess">
           I received your submission, thank you!
         </div>
         <button type="submit">Send</button>
@@ -109,6 +123,49 @@ export default {
 };
 </script>
 <style>
+.checkbox {
+  display: grid;
+  grid-gap: 2rem;
+  line-height: 1;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.5em;
+  font-size: 2rem;
+  color: theme("colors.blue.DEFAULT");
+  margin-bottom: 1em;
+}
+
+.checkbox__control {
+  display: inline-grid;
+  width: 1.875em;
+  height: 1.875em;
+  border-radius: 0.188em;
+  border: 0.125em solid currentColor;
+  opacity: 0.6;
+}
+
+.checkbox__control svg {
+  transform: scale(0);
+  transform-origin: bottom left;
+}
+
+.checkbox__input {
+  display: grid;
+  grid-template-areas: "checkbox";
+}
+.checkbox__input > * {
+  grid-area: checkbox;
+}
+
+.checkbox__input input {
+  opacity: 0;
+  width: 1.875em;
+  height: 1.875em;
+}
+
+.checkbox__input input:checked + .checkbox__control svg {
+  transform: scale(1);
+}
+
 .mygrid {
   @apply my-5 sm:grid sm:grid-cols-4 sm:mb-6;
 }
