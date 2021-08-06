@@ -8,14 +8,25 @@ import Fields from '../components/fields.astro'
 import About from '../components/about.astro'
 import Contact from '../components/vue/contact.vue'
 import Footer from '../components/footer.astro';
+
+const title = 'Artur Teixeira - Freelance Software Engineer';
+const description = 'Get applications that bring value. Pragmatic solutions for your problems. Contact me for a free 30-min consultation!';
 ---
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="application-name" content="Artur Teixeira"/>
-    <meta name="description" content="Get applications that bring value. Pragmatic solutions for your problems. Contact me for a free 30-min consultation!">
-    <title>Artur Teixeira - Freelance Software Engineer</title>
+    <meta name="description" content="{description}">
+    
+    <!-- LinkedIn Meta -->
+    <meta property="og:title" content="{title}"/>
+    <meta property="og:image" content="/assets/ogimage.png"/>
+    <meta property="og:description" content="{description}"/>
+    <meta property="og:url" content="https://artur-teixeira.tech/"/>
+    <meta name="author" content="Artur Teixeira">
+
+    <title>{title}</title>
     <Favicon />    
     <link rel="stylesheet" href="/style/global.css">
     <link rel="stylesheet" href="/style/header.css">
