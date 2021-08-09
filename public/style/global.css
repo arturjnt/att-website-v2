@@ -41,8 +41,7 @@
 }
 
 .full-page {
-    /* TODO: should be 320 */
-    min-width: 375px;
+    min-width: 320px;
 }
 
 .my-container {
