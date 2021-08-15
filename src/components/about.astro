@@ -1,7 +1,7 @@
 ---
 import Wrapper from './helpers/wrapper.astro';
 ---
-<Wrapper extraMainClasses="py-16 text-blue" extraSubClasses="grid sm:grid-cols-2 md:grid-cols-3">
+<Wrapper extraMainClasses="py-16 text-blue bg-blue-light" extraSubClasses="grid sm:grid-cols-2 md:grid-cols-3">
     <div class="img mb-6 sm:mb-0 sm:mr-6" />
     <div class="md:col-span-2">
         <div class="title-comp">about me:</div>
@@ -24,9 +24,13 @@ import Wrapper from './helpers/wrapper.astro';
                 <img src="/icons/twitter.svg" alt="Twitter" width="29" height="25">
                 <span class="pl-2.5">Twitter</span>
             </a>
-            <a href="https://github.com/arturjnt/" target="_blank" rel="noopener">
+            <a class="lg:mr-2.5" href="https://github.com/arturjnt/" target="_blank" rel="noopener">
                 <img src="/icons/github.svg" alt="GitHub" width="30" height="25">
                 <span class="pl-2.5">GitHub</span>
+            </a>
+            <a href="/files/CV-Artur Teixeira-2021.pdf" target="_blank" rel="noopener">
+                <img style="color: white;" src="/icons/cv.svg" alt="CV" width="30" height="25">
+                <span class="pl-2.5">CV</span>
             </a>
         </div>
     </div>
