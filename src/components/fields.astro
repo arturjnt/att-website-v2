@@ -15,7 +15,7 @@ const { skills } = Astro.props;
             <span class="sm:relative">
                 <button class="{`w-full sm:w-auto mx-1.5 mb-2.5 py-2.5 px-7 text-white ${skill.class}`}">
                     <span class="underline">{skill.name}</span>
-                    <span>▼</span>
+                    <span class="ml-1">▼</span>
                 </button>
                 <Subset subset="{skill.subset}" />
             </span>
