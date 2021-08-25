@@ -15,14 +15,18 @@ import Chat from '../../public/icons/chat.astro';
             </div>
         </div>
         <div class="mx-4 my-12 sm:my-0">
-            <div class="flex justify-center"><Chat fcolor="orange"/></div>
+            <div class="flex justify-center steps">
+                <img src="/icons/steps.svg" alt="Steps" width="80" height="80">
+            </div>
             <div class="icon-title">step-by-step</div>
             <div class="icon-content">
                 we draft the strategies and means to figure out what is necessary to achieve your goal.
             </div>
         </div>
         <div class="mx-4">
-            <div class="flex justify-center"><Chat fcolor="orange-dark"/></div>
+            <div class="flex justify-center steps">
+                <img src="/icons/budget.svg" alt="Budget" width="80" height="80">
+            </div>
             <div class="icon-title">Budget Solutions</div>
             <div class="icon-content">
                 Payment can be agreed upon either per project or, an hourly rate (min. 10h).
@@ -31,6 +35,10 @@ import Chat from '../../public/icons/chat.astro';
     </div>
 </Wrapper>
 <style>
+    .steps {
+        padding: 1.55rem;
+    }
+
     .icon-title {
         text-align: center;
         text-transform: capitalize;
