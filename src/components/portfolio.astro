@@ -1,10 +1,62 @@
 ---
 import Wrapper from './helpers/wrapper.astro';
+
+const portfolio = [
+    {
+        url: 'https://www.skeeled.com/',
+        picUrl: '/portfolio/skeeled.png',
+        name: 'B2B Recruitment Software Platform',
+        companyName: 'skeeled',
+        content: 'SKEELED is a web recruitment platform focused on AI and behavioural science that helps companies make data-driven hiring decisions.'
+    },
+    {
+        url: 'https://www.linkedin.com/company/topdocs/',
+        picUrl: '/portfolio/topdox.jpeg',
+        name: 'Team Documents Management Platform',
+        companyName: 'TOPDOX',
+        content: 'TOPDOX is the app for all your clouds and file servers. A single hub for enterprise mobility, it is a mobile file access and sharing solution your company, no migrations or cloud storage needed.'
+    },
+    {
+        url: 'https://group.jumia.com/',
+        picUrl: '/portfolio/jumia.png',
+        name: 'E-commerce Platform',
+        companyName: 'JUMIA',
+        content: 'JUMIA is the leading pan-African e-commerce platform active across 11 countries in the continent. The platform consists of a marketplace connecting thousands of sellers to millions of consumers, with integrated logistics and digital payment services.'
+    },
+    {
+        url: 'https://www.hermes-technic.pl/',
+        picUrl: '/portfolio/hermes.png',
+        name: 'Company Website',
+        companyName: 'Hermes Technic',
+        content: 'Hermes Technic has many years of experience in the field of metal and steel processing, welding and machine tooling. They approach each client in an individual and professional manner.'
+    },
+    {
+        url: 'https://github.com/arturjnt/kulut',
+        picUrl: 'https://raw.githubusercontent.com/arturjnt/kulut/main/assets/images/print.jpeg',
+        name: 'Kulut - Expense Tracker',
+        companyName: 'Open Source',
+        content: 'Having used many money tracking apps, and split payment apps over the years, I\'ve never found one that suited my needs and did both. So here we are.'
+    },
+    {
+        url: 'https://github.com/arturjnt/att-website-v2',
+        picUrl: '/assets/ogimage.png',
+        name: 'Personal website',
+        companyName: 'Open Source',
+        content: 'My personal website using an extremely new technology called Astro.'
+    }
+];
 ---
+    <!-- TODO: show name,cname on top && on hover show content -->
 <Wrapper extraMainClasses="py-16 text-blue bg-blue-light">
     <div class="title-comp">portfolio</div>
     <div class="sub-title-comp">where can you find my work</div>
+    <div class="content">test</div>
     <div class="lg:grid lg:grid-cols-3">
-        <div>Link to projects here.</div>
+        {portfolio.map(p => <a href="{p.url}" target="_blank" rel="noopener" class="border-2">
+            <img src="{p.picUrl}" alt="{p.companyName}">
+            <div>{p.companyName}</div>
+            <div>{p.name}</div>
+            <div>{p.content}</div>
+        </a>)}
     </div>
 </Wrapper>
