@@ -12,7 +12,7 @@ const portfolio = [
     {
         url: 'https://www.linkedin.com/company/topdocs/',
         picUrl: '/portfolio/topdox.jpeg',
-        name: 'Team Documents Management Platform',
+        name: 'Documents Management Platform',
         companyName: 'TOPDOX',
         content: 'TOPDOX is the app for all your clouds and file servers. A single hub for enterprise mobility, it is a mobile file access and sharing solution your company, no migrations or cloud storage needed.'
     },
@@ -49,14 +49,25 @@ const portfolio = [
     <!-- TODO: show name,cname on top && on hover show content -->
 <Wrapper extraMainClasses="py-16 text-blue bg-blue-light">
     <div class="title-comp">portfolio</div>
-    <div class="sub-title-comp">where can you find my work</div>
-    <div class="content">test</div>
-    <div class="lg:grid lg:grid-cols-3">
-        {portfolio.map(p => <a href="{p.url}" target="_blank" rel="noopener" class="border-2">
-            <img src="{p.picUrl}" alt="{p.companyName}">
-            <div>{p.companyName}</div>
-            <div>{p.name}</div>
-            <div>{p.content}</div>
+    <div class="sub-title-comp mb-8">check my latest works</div>
+    <!-- <div class="content">See my biggest projects listed below for a taste of what I can do.</div> -->
+    <div class="grid sm:grid-cols-2 md:grid-cols-3">
+        {portfolio.map(p => <a href="{p.url}" target="_blank" rel="noopener" class="block border-2 rounded-md m-1 border-blue-dark">
+            <div class="text-white px-2 py-1 bg-blue-dark">
+                <div class="font-bold">{p.companyName}</div>
+                <div>{p.name}</div>
+            </div>
+            <div style="{`background-image: url(${p.picUrl})`}" class="img"></div>
+            <div class="hidden">{p.content}</div>
         </a>)}
     </div>
 </Wrapper>
+<style>
+.img {
+    height: 176px;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    background-color: #fff;
+}
+</style>
