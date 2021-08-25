@@ -58,7 +58,9 @@ const portfolio = [
                 <div>{p.name}</div>
             </div>
             <div style="{`background-image: url(${p.picUrl})`}" class="img"></div>
-            <div class="hidden">{p.content}</div>
+            <div class="hidden">
+                <div class="flex self-center">{p.content}</div>
+            </div>
         </a>)}
     </div>
 </Wrapper>
@@ -73,8 +75,9 @@ const portfolio = [
     border-bottom-right-radius: 4px;
 }
 a:hover > .hidden {
-    display: block;
+    display: flex;
     padding: 4px;
+    height: 176px;
 }
 a:hover > .img {
     display: none;
