@@ -6,6 +6,7 @@ import Header from '../components/header.astro';
 import How from '../components/how.astro';
 import Fields from '../components/fields.astro'
 import Reviews from '../components/reviews.astro'
+import Portfolio from '../components/portfolio.astro'
 import About from '../components/about.astro'
 import Contact from '../components/vue/contact.vue'
 import Footer from '../components/footer.astro';
@@ -50,6 +51,7 @@ const description = 'Get applications that bring value. Pragmatic solutions for 
       <How />
       <Fields skills="{Skills}" />
       <Reviews client:idle />
+      <Portfolio client:idle />
       <About client:idle />
       <Contact skills="{Skills}" client:visible />
       <Footer client:idle/>

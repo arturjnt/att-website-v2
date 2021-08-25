@@ -1,7 +1,7 @@
 <template>
   <div
     id="contact"
-    class="my-container p-4 sm:px-14 py-16 text-blue"
+    class="my-container p-4 sm:px-14 py-16 text-blue bg-blue-light"
   >
     <div class="mw w-full">
       <div class="title-comp mb-4">contact</div>
@@ -190,6 +190,7 @@ export default {
 input[type="email"],
 input[type="text"] {
   @apply sm:col-span-2;
+  background-color: theme("colors.blue.fields");
   border-bottom-color: theme("colors.grey.DEFAULT");
   border-bottom-width: 1px;
   width: 100%;
@@ -214,6 +215,7 @@ textarea {
   height: 140px;
   width: 100%;
   border: 1px solid theme("colors.grey.DEFAULT");
+  background-color: theme("colors.blue.fields");
   box-sizing: border-box;
   border-radius: 4px;
 }
