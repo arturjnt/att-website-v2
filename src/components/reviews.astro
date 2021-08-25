@@ -5,10 +5,10 @@ const reviews = [
     // {
     //     picUrl: 'ezequiel.jpeg', 
     //     name: 'Ezequiel Campelo', 
-    //     title: 'Principal Co-Owner', 
+    //     title: 'Main Co-Owner', 
     //     companyName: 'The Camp HQ', 
     //     website: 'https://www.thecamphq.com/',
-    //     content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br/><br/> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.'
+    //     content: 'XXXXXXXXXX'
     // },
     {
         picUrl: 'wilberto.jpeg', 
@@ -24,8 +24,16 @@ const reviews = [
         title: 'Co-Owner', 
         companyName: 'Hermes Technic', 
         website: 'https://www.hermes-technic.pl/',
-        content: 'Artur Teixeira rebuilt my company\'s website in 2021 - www.hermes-technic.pl. Thanks to his professional guidelines regarding the shape and content, Hermes Technic\'s website has become clearer, which has resulted in greater recognition of my company among customers. I recommend cooperation with Artur Teixeira to everyone.'
-    }
+        content: 'Artur Teixeira rebuilt my company\'s website in 2021 (hermes-technic.pl). Thanks to his professional guidelines regarding the shape and content, Hermes Technic\'s website has become clearer, which has resulted in greater recognition of my company among customers. I recommend cooperation with Artur Teixeira to everyone.'
+    },
+    // {
+    //     picUrl: 'sonia.png', 
+    //     name: 'Dra. Sónia Costa', 
+    //     title: 'Founder & Owner', 
+    //     companyName: 'Clínica Sónia Costa', 
+    //     website: 'https://clinicasoniacosta.pt/',
+    //     content: 'XXXXXXXXXX'
+    // }
 ];
 ---
 <Wrapper extraMainClasses="py-16 text-blue">
@@ -39,7 +47,9 @@ const reviews = [
                 <div class="self-center ml-2">
                     <div class="text-blue-dark font-bold">{r.name}</div>
                     <div class="italic">{r.title}</div>
-                    <a href="{r.website}" target="_blank" class="italic underline">{r.companyName}</a>
+                    <a href="{r.website}" target="_blank" rel="noopener" class="italic underline">
+                        {r.companyName}
+                    </a>
                 </div>
             </div>
             <div>{r.content}</div>
