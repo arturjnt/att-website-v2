@@ -19,6 +19,11 @@
     "SUBTITLE": "Working since 2014 on Software, I've been through every job on the field...",
     "DESCRIPTION": "...from a ticket-grabbing developer, through full-stack, infrastructure, database management, continuous delivery, frontend and backend engineering, and even information security.<br/><br/>I've managed teams of 1 to 15 people of various fields of expertise such as Design, Data Science, Quality Assurance and Engineering and I was quite lucky to work with some of the best in the business.<br/><br/>Working directly with business owners and clients is something I have years of experience in, therefore I understand the value of translating a vision into an actionable roadmap and its features.<br/><br/>Bringing you value is my passion, that's why I build stuff."
   },
+  "FIELDS": {
+    "TITLE": "fields of expertise",
+    "SUBTITLE": "Web and Mobile Multiplatform (Flutter)",
+    "DESCRIPTION": "What I do have are a very particular set of skills. Skills I have acquired over a very long career. Skills that make me a dream* for people like you."
+  },
   "HEADER": {
     "TITLE": "discuss<br/>organize<br/>develop!",
     "SUBTITLE": "applications that bring value.",

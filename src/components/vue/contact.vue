@@ -76,7 +76,9 @@
         <div class="m-4 text-center text-orange-dark" v-show="isSuccess">
           {{ vuet("CONTACT.SUCCESS") }}
         </div>
-        <button type="submit">{{ vuet("CONTACT.SEND") }}</button>
+        <button class="button-send" type="submit">
+          {{ vuet("CONTACT.SEND") }}
+        </button>
       </form>
     </div>
   </div>
@@ -231,21 +233,21 @@ textarea {
   border-radius: 4px;
 }
 
-button {
-  @apply bg-orange !important;
+.button-send {
+  @apply bg-orange;
 
-  font-family: Norwester !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 28px !important;
-  line-height: 34px !important;
+  font-family: Norwester;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
 
-  text-transform: capitalize !important;
+  text-transform: capitalize;
 
-  color: #ffffff !important;
-  border-radius: 100px !important;
-  padding: 10px 70px !important;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 10px 70px;
 
-  align-self: center !important;
+  align-self: center;
 }
 </style>
