@@ -146,6 +146,11 @@
   "REVIEWS": {
     "TITLE": "reviews",
     "SUBTITLE": "what they say about me",
-    "DESCRIPTION": "If you are to trust me with your hard earned money, you want to make sure I can do the job preemptively, I get it, I would do exactly the same. Feel free to read what my clients have said."
+    "DESCRIPTION": "If you are to trust me with your hard earned money, you want to make sure I can do the job preemptively, I get it, I would do exactly the same. Feel free to read what my clients have said.",
+    "QUOTES": {
+      "CAMP": "One of the best professionals in the field.<br>Dedicated, engaged, and with a sense of commitment and compliance. Artur adds a great amount of value, by bringing within his service his whole professional experience in the market, guiding and helping us to have a global vision.",
+      "BLAZE": "It’s awesome to work with such a competent and committed professional like Artur. He goes beyond his duties to deliver his projects, giving insightful opinions and improvement suggestions, that are backed up by his already extensive experience in delivering complex projects effortlessly.",
+      "HERMES": "Artur rebuilt my company's website in 2021 (hermes-technic.pl). Thanks to his professional guidelines regarding the shape and content, Hermes Technic's website has become clearer, which has resulted in greater recognition of my company among customers. I recommend cooperation with Artur Teixeira to everyone."
+    }
   }
 }

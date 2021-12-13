@@ -8,7 +8,7 @@ const reviews = [
         title: 'Main Co-Owner', 
         companyName: 'The Camp HQ', 
         website: 'https://www.thecamphq.com/',
-        content: 'One of the best professionals in the field.<br> Dedicated, engaged, and with a sense of commitment and compliance. Artur adds a great amount of value, by bringing within his service his whole professional experience in the market, guiding and helping us to have a global vision.'
+        content: 'REVIEWS.QUOTES.CAMP'
     },
     {
         picUrl: 'wilberto.jpeg', 
@@ -16,7 +16,7 @@ const reviews = [
         title: 'Co-Founder & CEO', 
         companyName: 'Blaze Information Security', 
         website: 'https://www.blazeinfosec.com/',
-        content: 'It’s awesome to work with such a competent and committed professional like Artur. He goes beyond his duties to deliver his projects, giving insightful opinions and improvement suggestions, that are backed up by his already extensive experience in delivering complex projects effortlessly.'
+        content: 'REVIEWS.QUOTES.BLAZE'
     },
     {
         picUrl: 'przemslaw.jpeg', 
@@ -24,7 +24,7 @@ const reviews = [
         title: 'Co-Owner', 
         companyName: 'Hermes Technic', 
         website: 'https://www.hermes-technic.pl/',
-        content: 'Artur Teixeira rebuilt my company\'s website in 2021 (hermes-technic.pl). Thanks to his professional guidelines regarding the shape and content, Hermes Technic\'s website has become clearer, which has resulted in greater recognition of my company among customers. I recommend cooperation with Artur Teixeira to everyone.'
+        content: 'REVIEWS.QUOTES.HERMES'
     },
     // {
     //     picUrl: 'sonia.png', 
@@ -54,7 +54,7 @@ const {t} = Astro.props;
                     </a>
                 </div>
             </div>
-            <div>{r.content}</div>
+            <div>{t(r.content)}</div>
         </div>)}
     </div>
 </Wrapper>

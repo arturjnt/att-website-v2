@@ -146,6 +146,11 @@
   "REVIEWS": {
     "TITLE": "opiniões",
     "SUBTITLE": "o que os meus clientes dizem sobre mim",
-    "DESCRIPTION": "Se você vai confiar em mim  o seu dinheiro arduamente ganho, quer ter a certeza de que posso fazer o trabalho 'a priori'. Eu entendo, eu faria exatamente o mesmo. Fique à vontade para ler o que meus clientes disseram."
+    "DESCRIPTION": "Se você vai confiar em mim  o seu dinheiro arduamente ganho, quer ter a certeza de que posso fazer o trabalho 'a priori'. Eu entendo, eu faria exatamente o mesmo. Fique à vontade para ler o que meus clientes disseram.",
+    "QUOTES": {
+      "CAMP": "Um dos melhores profissionais da área.<br>Dedicado, responsivo e com sentido de comprometimento e conformidade. O Artur agrega muito valor, por trazer com o seu serviço toda a sua experiência profissional que tem no mercado, orientando-nos e ajudando a ter uma visão global da solução.",
+      "BLAZE": "É incrível trabalhar com um profissional tão competente e comprometido como o Artur. Ele vai além das suas funções de entregar os seus projetos, dando opiniões perspicazes e sugestões de melhorias, que são fundamentadas pela sua já extensa experiência na entrega de projetos complexos sem esforço.",
+      "HERMES": "O Artur reconstruiu o site da minha empresa em 2021 (hermes-technic.pl). Graças às suas orientações profissionais quanto à forma e ao conteúdo, o site da Hermes Technic tornou-se mais claro, o que resultou num maior reconhecimento da minha empresa junto dos clientes. Recomendo a todos colaborar com o Artur."
+    }
   }
 }
