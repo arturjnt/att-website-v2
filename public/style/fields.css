@@ -1,41 +1,41 @@
 button:focus + .subset {
-    display: block;
+  display: block;
 }
 
 .subset > div:first-of-type {
-    padding-top: 0px;
+  padding-top: 0px;
 }
 
 .subset > div:last-of-type {
-    border-bottom: 0px;
-    padding-bottom: 0px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .sub {
-    font-family: Kollektif;
-    font-size: 18px;
-    line-height: 24px;
+  font-family: Kollektif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .subsub {
-    font-family: Hind;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
+  font-family: Hind;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 @media (min-width: 640px) {
-    .subset {
-        padding: 1rem;
-        top: 5px;
-        left: -10px;
-        z-index: 10;
-        /* Figma starts here */
-        position: absolute;
-        width: 180px;
-        background-color: white;
-        border-radius: 8px;
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
-    }
+  .subset {
+    padding: 1rem;
+    top: 5px;
+    left: -10px;
+    z-index: 10;
+    /* Figma starts here */
+    position: absolute;
+    width: 180px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  }
 }

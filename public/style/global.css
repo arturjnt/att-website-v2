@@ -2,79 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-    font-family: "Norwester";
-    src: url("/fonts/norwester/norwester.otf");
+  font-family: "Norwester";
+  src: url("/fonts/norwester/norwester.otf");
 }
 
 @font-face {
-    font-family: "Kollektif";
-    src: url("/fonts/kollektif/Kollektif.ttf");
+  font-family: "Kollektif";
+  src: url("/fonts/kollektif/Kollektif.ttf");
 }
 
 @font-face {
-    font-family: "Hind";
-    src: url("/fonts/hind/hind-regular.otf");
+  font-family: "Hind";
+  src: url("/fonts/hind/hind-regular.otf");
 }
 
 @font-face {
-    font-family: "Hind";
-    src: url("/fonts/hind/hind-bold.otf");
-    font-weight: bold;
+  font-family: "Hind";
+  src: url("/fonts/hind/hind-bold.otf");
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: "Hind";
-    src: url("/fonts/hind/hind-light.otf");
-    font-weight: 300;
+  font-family: "Hind";
+  src: url("/fonts/hind/hind-light.otf");
+  font-weight: 300;
 }
 
 @font-face {
-    font-family: "Hind";
-    src: url("/fonts/hind/hind-medium.otf");
-    font-weight: 500;
+  font-family: "Hind";
+  src: url("/fonts/hind/hind-medium.otf");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: "Hind";
-    src: url("/fonts/hind/hind-semibold.otf");
-    font-weight: 600;
+  font-family: "Hind";
+  src: url("/fonts/hind/hind-semibold.otf");
+  font-weight: 600;
 }
 
 .full-page {
-    min-width: 320px;
-    font-family: Hind;
+  min-width: 320px;
+  font-family: Hind;
 }
 
 .my-container {
-    @tailwind p-8;
-    display: flex;
-    flex-direction: column;
+  @tailwind p-8;
+  display: flex;
+  flex-direction: column;
 }
 
 .mw {
-    @tailwind mb-8;
-    max-width: 900px;
-    align-self: center;
+  @tailwind mb-8;
+  max-width: 900px;
+  align-self: center;
 }
 
 /* Fills for svg */
 .fill-orange {
-    fill: theme('colors.orange.DEFAULT');
+  fill: theme("colors.orange.DEFAULT");
 }
 .fill-orange-light {
-    fill: theme('colors.orange.light');
+  fill: theme("colors.orange.light");
 }
 .fill-orange-dark {
-    fill: theme('colors.orange.dark');
+  fill: theme("colors.orange.dark");
 }
 
 /* BG for buttons */
 .bg-orange {
-    background-color: theme('colors.orange.DEFAULT');
+  background-color: theme("colors.orange.DEFAULT");
 }
 .bg-orange-light {
-    background-color: theme('colors.orange.light');
+  background-color: theme("colors.orange.light");
 }
 .bg-orange-dark {
-    background-color: theme('colors.orange.dark');
+  background-color: theme("colors.orange.dark");
 }
