@@ -35,11 +35,13 @@ const reviews = [
     //     content: 'XXXXXXXXXX'
     // }
 ];
+
+const {t} = Astro.props;
 ---
 <Wrapper id="reviews" extraMainClasses="py-16 text-blue">
-    <div class="title-comp">reviews</div>
-    <div class="sub-title-comp">what they say about me</div>
-    <div class="content">If you are to trust me with your hard earned money, you want to make sure I can do the job preemptively, I get it, I would do exactly the same. Feel free to read what my clients have said.</div>
+    <div class="title-comp">{t('REVIEWS.TITLE')}</div>
+    <div class="sub-title-comp">{t('REVIEWS.SUBTITLE')}</div>
+    <div class="content">{t('REVIEWS.DESCRIPTION')}</div>
     <div class="grid md:grid-cols-3">
         {reviews.map(r => <div class="border-2 border-orange rounded-3xl p-4 m-2">
             <div class="flex mb-4">

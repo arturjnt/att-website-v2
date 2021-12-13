@@ -142,5 +142,10 @@
         "CONTENT": "O meu website pessoal usando uma tecnologia extremamente nova chamada Astro."
       }
     }
+  },
+  "REVIEWS": {
+    "TITLE": "opiniões",
+    "SUBTITLE": "o que os meus clientes dizem sobre mim",
+    "DESCRIPTION": "Se você vai confiar em mim  o seu dinheiro arduamente ganho, quer ter a certeza de que posso fazer o trabalho 'a priori'. Eu entendo, eu faria exatamente o mesmo. Fique à vontade para ler o que meus clientes disseram."
   }
 }

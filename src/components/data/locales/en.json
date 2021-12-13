@@ -142,5 +142,10 @@
         "CONTENT": "My personal website using an extremely new technology called Astro."
       }
     }
+  },
+  "REVIEWS": {
+    "TITLE": "reviews",
+    "SUBTITLE": "what they say about me",
+    "DESCRIPTION": "If you are to trust me with your hard earned money, you want to make sure I can do the job preemptively, I get it, I would do exactly the same. Feel free to read what my clients have said."
   }
 }
