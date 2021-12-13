@@ -5,61 +5,61 @@ const portfolio = [
     {
         url: 'https://www.skeeled.com/',
         picUrl: '/portfolio/skeeled.png',
-        name: 'B2B Recruitment Software Platform',
+        name: 'SKEELED.NAME',
         companyName: 'skeeled',
-        content: 'SKEELED is a web recruitment platform focused on AI and behavioural science that helps companies make data-driven hiring decisions.'
+        content: 'SKEELED.CONTENT'
     },
     {
         url: 'https://www.linkedin.com/company/topdocs/',
         picUrl: '/portfolio/topdox.jpeg',
-        name: 'Documents Management Platform',
+        name: 'TOPDOX.NAME',
         companyName: 'TOPDOX',
-        content: 'TOPDOX is the app for all your clouds and file servers. A single hub for enterprise mobility, it is a mobile file access and sharing solution your company, no migrations or cloud storage needed.'
+        content: 'TOPDOX.CONTENT'
     },
     {
         url: 'https://group.jumia.com/',
         picUrl: '/portfolio/jumia.png',
-        name: 'E-commerce Platform',
+        name: 'JUMIA.NAME',
         companyName: 'JUMIA',
-        content: 'JUMIA is the leading pan-African e-commerce platform active across 11 countries in the continent. The platform consists of a marketplace connecting thousands of sellers to millions of consumers, with integrated logistics and digital payment services.'
+        content: 'JUMIA.CONTENT'
     },
     {
         url: 'https://www.hermes-technic.pl/',
         picUrl: '/portfolio/hermes.png',
-        name: 'Company Website',
+        name: 'HERMES.NAME',
         companyName: 'Hermes Technic',
-        content: 'Hermes Technic has many years of experience in the field of metal and steel processing, welding and machine tooling. They approach each client in an individual and professional manner.'
+        content: 'HERMES.CONTENT'
     },
     {
         url: 'https://github.com/arturjnt/kulut',
         picUrl: 'https://raw.githubusercontent.com/arturjnt/kulut/main/assets/images/print.jpeg',
-        name: 'Kulut - Expense Tracker',
+        name: 'KULUT.NAME',
         companyName: 'Open Source',
-        content: 'Having used many money tracking apps, and split payment apps over the years, I\'ve never found one that suited my needs and did both. So here we are.'
+        content: 'KULUT.CONTENT'
     },
     {
         url: 'https://github.com/arturjnt/att-website-v2',
         picUrl: '/assets/ogimage.png',
-        name: 'Personal website',
+        name: 'WEBSITE.NAME',
         companyName: 'Open Source',
-        content: 'My personal website using an extremely new technology called Astro.'
+        content: 'WEBSITE.CONTENT'
     }
 ];
+
+const {t} = Astro.props;
 ---
-    <!-- TODO: show name,cname on top && on hover show content -->
 <Wrapper id="portfolio" extraMainClasses="py-16 text-blue bg-blue-light">
-    <div class="title-comp">portfolio</div>
-    <div class="sub-title-comp mb-8">check out my latest work</div>
-    <!-- <div class="content">See my biggest projects listed below for a taste of what I can do.</div> -->
+    <div class="title-comp">{t('PORTFOLIO.TITLE')}</div>
+    <div class="sub-title-comp mb-8">{t('PORTFOLIO.SUBTITLE')}</div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3">
         {portfolio.map(p => <a href="{p.url}" target="_blank" rel="noopener" class="block border-2 rounded-md m-1 border-blue-dark">
             <div class="text-white px-2 py-1 bg-blue-dark">
                 <div class="font-bold">{p.companyName}</div>
-                <div>{p.name}</div>
+                <div>{t('PORTFOLIO.WORKS.' + p.name)}</div>
             </div>
             <div style="{`background-image: url(${p.picUrl})`}" class="img"></div>
             <div class="hidden">
-                <div class="flex self-center">{p.content}</div>
+                <div class="flex self-center">{t('PORTFOLIO.WORKS.' + p.content)}</div>
             </div>
         </a>)}
     </div>

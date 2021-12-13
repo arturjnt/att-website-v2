@@ -112,5 +112,35 @@
     "SUBPART2": "we draft the strategies and means to figure out what is necessary to achieve your goal.",
     "PART3": "Budget Solutions",
     "SUBPART3": "Payment can be agreed upon either per project or, an hourly rate (minimum 10h)."
+  },
+  "PORTFOLIO": {
+    "TITLE": "portfolio",
+    "SUBTITLE": "check out my latest work",
+    "WORKS": {
+      "SKEELED": {
+        "NAME": "B2B Recruitment Software Platform",
+        "CONTENT": "SKEELED is a web recruitment platform focused on AI and behavioural science that helps companies make data-driven hiring decisions."
+      },
+      "TOPDOX": {
+        "NAME": "Documents Management Platform",
+        "CONTENT": "TOPDOX is the app for all your clouds and file servers. A single hub for enterprise mobility, it is a mobile file access and sharing solution your company, no migrations or cloud storage needed."
+      },
+      "JUMIA": {
+        "NAME": "E-commerce Platform",
+        "CONTENT": "JUMIA is the leading pan-African e-commerce platform active across 11 countries in the continent. The platform consists of a marketplace connecting thousands of sellers to millions of consumers, with integrated logistics and digital payment services."
+      },
+      "HERMES": {
+        "NAME": "Company Website",
+        "CONTENT": "Hermes Technic has many years of experience in the field of metal and steel processing, welding and machine tooling. They approach each client in an individual and professional manner."
+      },
+      "KULUT": {
+        "NAME": "Kulut - Expense Tracker",
+        "CONTENT": "Having used many money tracking apps, and split payment apps over the years, I've never found one that suited my needs and did both. So here we are."
+      },
+      "WEBSITE": {
+        "NAME": "Personal website",
+        "CONTENT": "My personal website using an extremely new technology called Astro."
+      }
+    }
   }
 }

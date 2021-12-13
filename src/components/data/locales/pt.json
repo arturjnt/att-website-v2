@@ -112,5 +112,35 @@
     "SUBPART2": "nós traçamos as estratégias e meios para descobrir o que é necessário para atingir os seus objetivos.",
     "PART3": "Orçamentos",
     "SUBPART3": "O pagamento pode ser combinado por projeto ou por hora (mínimo 10h)."
+  },
+  "PORTFOLIO": {
+    "TITLE": "portefólio",
+    "SUBTITLE": "veja os meus trabalhos mais recentes",
+    "WORKS": {
+      "SKEELED": {
+        "NAME": "Plataforma de Recrutamento para Empresas",
+        "CONTENT": "A SKEELED é uma plataforma de recrutamento na web com foco em IA e ciência comportamental que ajuda as empresas a tomar decisões de contratação baseadas em dados."
+      },
+      "TOPDOX": {
+        "NAME": "Plataforma de Gestão de Documentos",
+        "CONTENT": "TOPDOX é a aplicação para todas as suas nuvens e servidores de ficheiros. Um único hub para mobilidade empresarial, é uma solução móvel de acesso e compartilhamento de ficheiros para sua empresa, sem necessidade de migrações ou armazenamento em nuvem."
+      },
+      "JUMIA": {
+        "NAME": "Loja Online",
+        "CONTENT": "A JUMIA é a loja online pan-africana líder, ativa em 11 países do continente. A plataforma consiste num marketplace que conecta milhares de vendedores a milhões de consumidores, com logística integrada e serviços de pagamento digital."
+      },
+      "HERMES": {
+        "NAME": "Website empresarial",
+        "CONTENT": "Hermes Technic tem muitos anos de experiência na área de processamento de metal e aço, soldagem e máquinas-ferramenta. Eles abordam cada cliente de maneira individual e profissional."
+      },
+      "KULUT": {
+        "NAME": "Kulut - Registo de Gastos",
+        "CONTENT": "Tendo usado muitas aplicações de registo de gastos, e de divisão de despesas ao longo dos anos, nunca encontrei uma que atendesse às minhas necessidades e fizesse as duas funções. Então aqui estamos nós."
+      },
+      "WEBSITE": {
+        "NAME": "Website pesssoal",
+        "CONTENT": "O meu website pessoal usando uma tecnologia extremamente nova chamada Astro."
+      }
+    }
   }
 }
