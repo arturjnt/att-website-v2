@@ -2,8 +2,7 @@
 import Wrapper from './helpers/wrapper.astro';
 import ChangeLanguage from './helpers/changeLanguage.astro';
 
-import T from './js/i18n';
-const { l } = Astro.props;
+const { l, T } = Astro.props;
 ---
 <Wrapper id="header" extraMainClasses="text-white" extraSubClasses="z-10">
     <ChangeLanguage />

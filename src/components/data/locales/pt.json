@@ -14,6 +14,11 @@
     "SUCCESS": "Recebi a sua mensagem, obrigado!",
     "SEND": "Enviar"
   },
+  "ABOUT": {
+    "TITLE": "sobre mim:",
+    "SUBTITLE": "A trabalhar desde 2014 em Software, já passei por todos os trabalhos da área...",
+    "DESCRIPTION": "...desde desenvolvedor júnior, full-stack, infra-estrutura, gestão de base de dados, entrega contínua, engenharia de frontend e backend, e até segurança de informação (em IT).<br/><br/>Geri equipas de uma a 15 pessoas de vários campos de especialização tais como Design, Data Science, Quality Assurance e Engenharia de Software, e fortuitamente tive oportunidade de trabalhar com alguns dos melhores nessas áreas.<br/><br/>Trabalhando diretamente com donos do negócio e clientes é algo em que tenho anos de experiência, por conseguinte compreendo o valor de traduzir uma visão num plano accionável e suas funcionalidades.<br/><br/>Trazer valor ao seu negócio é a minha paixão, é por isso que faço o que faço."
+  },
   "HEADER": {
     "TITLE": "examinar<br/>organizar<br/>desenvolver!",
     "SUBTITLE": "aplicações que trazem valor.",

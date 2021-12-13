@@ -82,11 +82,9 @@
   </div>
 </template>
 <script>
-import T from "../js/i18n.js";
-
 export default {
   name: "Contact",
-  props: ["skills", "l"],
+  props: ["skills", "l", "T"],
   data() {
     return {
       name: "",
@@ -99,7 +97,7 @@ export default {
   },
   methods: {
     t(CODE) {
-      return T(this.l, CODE);
+      return this.T(this.l, CODE);
     },
     onSubmit() {
       let data = `
