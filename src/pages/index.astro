@@ -2,6 +2,8 @@
 import Favicon from '../components/helpers/favicon.astro';
 import Skills from '../components/data/skills.json';
 
+import T from '../components/js/i18n.js';
+
 import Header from '../components/header.astro';
 import How from '../components/how.astro';
 import Fields from '../components/fields.astro'
@@ -11,14 +13,15 @@ import About from '../components/about.astro'
 import Contact from '../components/vue/contact.vue'
 import Footer from '../components/footer.astro';
 
-const title = 'Artur Teixeira - Freelance Software Engineer';
-const description = 'Get applications that bring value. Pragmatic solutions for your problems. Contact me for a free 30-min consultation!';
+const l = 'en';
+const title = T(l, 'META.TITLE');
+const description = T(l, 'META.DESCRIPTION');
 ---
-<html lang="en">
+<html lang="{l}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="application-name" content="Artur Teixeira"/>
+    <meta name="application-name" content="{T(l, 'META.AUTHOR')}"/>
     <meta name="description" content="{description}">
     
     <!-- LinkedIn Meta -->
@@ -26,7 +29,7 @@ const description = 'Get applications that bring value. Pragmatic solutions for 
     <meta property="og:image" content="/assets/ogimage.png"/>
     <meta property="og:description" content="{description}"/>
     <meta property="og:url" content="https://artur-teixeira.tech/"/>
-    <meta name="author" content="Artur Teixeira">
+    <meta name="author" content="{T(l, 'META.AUTHOR')}">
 
     <title>{title}</title>
     <Favicon />    
