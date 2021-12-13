@@ -2,14 +2,14 @@
 import Wrapper from './helpers/wrapper.astro';
 import Subset from './helpers/subset.astro';
 
-const { skills, t } = Astro.props;
+const { t } = Astro.props;
 ---
 <Wrapper extraMainClasses="py-16 bg-blue-light text-blue">
     <div class="title-comp">{t('FIELDS.TITLE')}</div>
     <div class="sub-title-comp">{t('FIELDS.SUBTITLE')}</div>
     <div class="content">{t('FIELDS.DESCRIPTION')}</div>
     <div>
-        {skills.map(skill =>
+        {t('SKILLS').map(skill =>
             <span class="sm:relative">
                 <button class="{`w-full sm:w-auto mx-1.5 mb-2.5 py-2.5 px-7 text-white ${skill.class}`}">
                     <span class="underline">{skill.name}</span>

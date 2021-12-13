@@ -24,6 +24,75 @@
     "SUBTITLE": "Web e Mobile Multi-Platforma (Flutter)",
     "DESCRIPTION": "O que eu tenho é um conjunto de habilidades muito particular. Habilidades que adquiri ao longo de anos de carreira. Habilidades que me fazem ser um sonho* para pessoas como você."
   },
+  "SKILLS": [
+    {
+      "name": "Web",
+      "class": "bg-orange-dark",
+      "subset": [
+        { "name": "HTML" },
+        {
+          "name": "CSS",
+          "subset": [{ "name": "SASS" }, { "name": "Tailwind CSS" }]
+        },
+        {
+          "name": "Javascript",
+          "subset": [
+            { "name": "Node.js" },
+            { "name": "Vue.js" },
+            { "name": "React.JS" },
+            { "name": "Gatsby" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mobile",
+      "class": "bg-orange",
+      "subset": [{ "name": "Dart" }, { "name": "Flutter" }]
+    },
+    {
+      "name": "Infra-estrutura",
+      "class": "bg-orange-light",
+      "subset": [
+        { "name": "AWS (S3, EC2, etc)" },
+        { "name": "OVH (VPS)" },
+        { "name": "Firebase (Funções server-less)" }
+      ]
+    },
+    {
+      "name": "CI/CD",
+      "class": "bg-orange",
+      "subset": [{ "name": "Jenkins" }]
+    },
+    {
+      "name": "Base de Dados",
+      "class": "bg-orange",
+      "subset": [
+        { "name": "NoSQL" },
+        { "name": "MongoDB" },
+        { "name": "SQL" },
+        { "name": "Firebase" },
+        { "name": "GraphQL" }
+      ]
+    },
+    {
+      "name": "Tech. de Gestão",
+      "class": "bg-orange-light",
+      "subset": [
+        { "name": "Git" },
+        { "name": "JIRA" },
+        { "name": "Trello" },
+        { "name": "Miro" },
+        { "name": "Figma" },
+        { "name": "Sketch" }
+      ]
+    },
+    {
+      "name": "Consultoria IT",
+      "class": "bg-orange",
+      "subset": [{ "name": "GDPR (DPIAs)" }, { "name": "Lei das Cookies" }]
+    }
+  ],
   "HEADER": {
     "TITLE": "examinar<br/>organizar<br/>desenvolver!",
     "SUBTITLE": "aplicações que trazem valor.",

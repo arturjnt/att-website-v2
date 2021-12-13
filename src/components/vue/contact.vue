@@ -32,7 +32,7 @@
         <div class="mygrid">
           <div class="main-label">{{ vuet("CONTACT.AREAS_OF_INTEREST") }}</div>
           <div class="sm:ml-2 sm:col-span-2">
-            <div v-for="(area, index) in skills" :key="index">
+            <div v-for="(area, index) in vuet('SKILLS')" :key="index">
               <label class="checkbox check-label" :for="area.name">
                 <span class="checkbox__input">
                   <input
@@ -86,7 +86,7 @@
 <script>
 export default {
   name: "Contact",
-  props: ["skills", "t"],
+  props: ["t"],
   data() {
     return {
       name: "",

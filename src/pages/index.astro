@@ -1,6 +1,5 @@
 ---
 import Favicon from '../components/helpers/favicon.astro';
-import Skills from '../components/data/skills.json';
 
 import T from '../components/js/i18n.js';
 
@@ -54,11 +53,11 @@ const description = t('META.DESCRIPTION');
     <div class="full-page">
       <Header l="{l}" t="{t}" />
       <How />
-      <Fields skills="{Skills}" t="{t}" />
+      <Fields t="{t}" />
       <Reviews client:idle />
       <Portfolio client:idle />
       <About client:idle t="{t}" />
-      <Contact skills="{Skills}" t="{t}" />
+      <Contact t="{t}" />
       <Footer client:idle/>
     </div>
 </body>
