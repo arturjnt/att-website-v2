@@ -1,67 +1,76 @@
 #header {
-    background-image: url('/assets/bg-hero.jpg');
-    background-size: cover;
-    background-position: right;
-    mix-blend-mode: exclusion;
-    display: flex;
-    justify-content: center;
-    height: 500px;
+  background-image: url("/assets/bg-hero.jpg");
+  background-size: cover;
+  background-position: right;
+  mix-blend-mode: exclusion;
+  display: flex;
+  justify-content: center;
+  height: 500px;
 }
 
 #header::before {
-    background: linear-gradient(260deg, rgba(255, 255, 255, 0.5) 15%, #2F3644 50%);
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    height: inherit;
-    width: 100%;
+  background: linear-gradient(
+    260deg,
+    rgba(255, 255, 255, 0.5) 15%,
+    #2f3644 50%
+  );
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: 100%;
+}
+
+.header-title-pt-override {
+  font-size: 52px !important;
+  line-height: 60px !important;
 }
 
 .title {
-    text-transform: uppercase;
-    /* Start figma here */
-    font-family: Norwester;
-    font-size: 75px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 74px;
-    letter-spacing: 0em;
-    text-align: left;
+  text-transform: uppercase;
+  /* Start figma here */
+  font-family: Norwester;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 74px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .subtitle {
-    text-transform: uppercase;
-    /* Start figma here */
-    font-family: Kollektif;
-    font-size: 31px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 37px;
-    letter-spacing: -0.02em;
-    text-align: left;
+  text-transform: uppercase;
+  /* Start figma here */
+  font-family: Kollektif;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: -0.02em;
+  text-align: left;
 }
 
 .subsubtitle {
-    text-transform: uppercase;
-    /* Start figma here */
-    font-family: Kollektif;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: -0.02em;
-    text-align: left;
+  text-transform: uppercase;
+  /* Start figma here */
+  font-family: Kollektif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: left;
 }
 
 a.header-b {
-    text-transform: capitalize;
-    /* Start figma here */
-    font-family: Norwester;
-    font-size: 28px;
-    font-weight: 400;
-    text-align: left;
-    /* End figma here */
-    padding: 10px 20px;
-    border-radius: 100px;
+  text-transform: capitalize;
+  /* Start figma here */
+  font-family: Norwester;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+  /* End figma here */
+  padding: 10px 20px;
+  border-radius: 100px;
 }

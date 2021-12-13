@@ -1,13 +1,20 @@
 ---
 import Wrapper from './helpers/wrapper.astro';
 import ChangeLanguage from './helpers/changeLanguage.astro';
+
+import T from './js/i18n';
+const { l } = Astro.props;
 ---
 <Wrapper id="header" extraMainClasses="text-white" extraSubClasses="z-10">
     <ChangeLanguage />
-    <div class="title mb-2">discuss<br/>organize<br/>develop!</div>
-    <div class="subtitle">applications that bring value.</div>
-    <div class="subsubtitle">Contact me for a free 30-min consultation.</div>
+    <div class="{l=='pt' ? 'title mb-2 header-title-pt-override' : 'title mb-2'}">
+        {T(l, 'HEADER.TITLE')}
+    </div>
+    <div class="subtitle">{T(l, 'HEADER.SUBTITLE')}</div>
+    <div class="subsubtitle">{T(l, 'HEADER.SUBSUBTITLE')}</div>
     <div class="mt-4">
-        <a href="#contact" class="header-b bg-orange">get in touch now!</a>
+        <a href="#contact" class="header-b bg-orange">
+            {T(l, 'HEADER.BUTTON')}
+        </a>
     </div>
 </Wrapper>
