@@ -19,6 +19,7 @@ yarn-error.log*
 
 # Own
 src/components/_old
+firebase-debug.log
 
 # Secrets
 firestore.rules
