@@ -4,6 +4,16 @@
     "DESCRIPTION": "Get applications that bring value. Pragmatic solutions for your problems. Contact me for a free 30-min consultation!",
     "AUTHOR": "Artur Teixeira"
   },
+  "CONTACT": {
+    "TITLE": "Contact me",
+    "EMAIL": "Email address",
+    "NAME": "Name",
+    "COMPANY_NAME": "Company Name",
+    "AREAS_OF_INTEREST": "Areas of Interest",
+    "MESSAGE": "Message",
+    "SUCCESS": "I received your message, thank you!",
+    "SEND": "Send"
+  },
   "HEADER": {
     "TITLE": "discuss<br/>organize<br/>develop!",
     "SUBTITLE": "applications that bring value.",

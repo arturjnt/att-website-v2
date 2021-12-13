@@ -4,6 +4,16 @@
     "DESCRIPTION": "Consegue aplicações que trazem valor. Soluções pragmáticas para os seus problemas. Contacte me para uma avaliação grátis de 30min!",
     "AUTHOR": "Artur Teixeira"
   },
+  "CONTACT": {
+    "TITLE": "Contacte-me",
+    "EMAIL": "Endereço de Email",
+    "NAME": "Nome",
+    "COMPANY_NAME": "Nome da Empresa",
+    "AREAS_OF_INTEREST": "Áreas de Interesse",
+    "MESSAGE": "Mensagem",
+    "SUCCESS": "Recebi a sua mensagem, obrigado!",
+    "SEND": "Enviar"
+  },
   "HEADER": {
     "TITLE": "examinar<br/>organizar<br/>desenvolver!",
     "SUBTITLE": "aplicações que trazem valor.",

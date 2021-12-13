@@ -4,7 +4,7 @@
     class="my-container p-4 sm:px-14 py-16 text-blue bg-blue-light"
   >
     <div class="mw w-full">
-      <div class="title-comp mb-4">contact</div>
+      <div class="title-comp mb-4">{{t('CONTACT.TITLE')}}</div>
       <form
         class="flex flex-col"
         accept-charset="UTF-8"
@@ -12,19 +12,19 @@
         method="POST"
       >
         <div class="mygrid">
-          <label class="main-label" for="email">Email address<span>*</span></label>
+          <label class="main-label" for="email">{{t('CONTACT.EMAIL')}}<span>*</span></label>
           <input id="email" type="email" v-model="email" required="required" />
         </div>
         <div class="mygrid">
-          <label class="main-label" for="name">Name<span>*</span></label>
+          <label class="main-label" for="name">{{t('CONTACT.NAME')}}<span>*</span></label>
           <input id="name" type="text" v-model="name" required="required" />
         </div>
         <div class="mygrid">
-          <label class="main-label" for="company_name">Company Name </label>
+          <label class="main-label" for="company_name">{{t('CONTACT.COMPANY_NAME')}} </label>
           <input id="company_name" type="text" v-model="cname" />
         </div>
         <div class="mygrid">
-          <div class="main-label">Areas of Interest</div>
+          <div class="main-label">{{t('CONTACT.AREAS_OF_INTEREST')}}</div>
           <div class="sm:ml-2 sm:col-span-2">
             <div v-for="(area, index) in skills" :key="index">
               <label class="checkbox check-label" :for="area.name">
@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="mygrid">
-          <label class="main-label" for="message">Message<span>*</span></label>
+          <label class="main-label" for="message">{{t('CONTACT.MESSAGE')}}<span>*</span></label>
           <textarea
             id="message"
             type="text"
@@ -66,17 +66,19 @@
           ></textarea>
         </div>
         <div class="m-4 text-center text-orange-dark" v-show="isSuccess">
-          I received your submission, thank you!
+          {{t('CONTACT.SUCCESS')}}
         </div>
-        <button type="submit">Send</button>
+        <button type="submit">{{t('CONTACT.SEND')}}</button>
       </form>
     </div>
   </div>
 </template>
 <script>
+import T from '../js/i18n.js';
+
 export default {
   name: "Contact",
-  props: ["skills"],
+  props: ["skills", "l"],
   data() {
     return {
       name: "",
@@ -88,6 +90,9 @@ export default {
     };
   },
   methods: {
+    t(CODE) {
+      return T(this.l, CODE);
+    },
     onSubmit() {
       let data = `
         Email: ${this.email}
