@@ -1,36 +1,32 @@
 ---
 import Wrapper from './helpers/wrapper.astro';
 import Chat from '../../public/icons/chat.astro';
+
+const {t} = Astro.props;
 ---
 <Wrapper extraMainClasses="py-16 text-blue">
-    <div class="title-comp">how i work</div>
-    <div class="sub-title-comp">"Pragmatic solutions for your problems."</div>
-    <div class="content">I believe all challenges should be dealt with sensibly and realistically, in a way that is based on practicality rather than theoretical considerations. Quality is the name of the game here, all deliverables will be up to the highest standard.</div>
+    <div class="title-comp">{t('HOW.TITLE')}</div>
+    <div class="sub-title-comp">{t('HOW.SUBTITLE')}</div>
+    <div class="content">{t('HOW.DESCRIPTION')}</div>
     <div class="grid grid-cols-1 sm:grid-cols-3">
         <div class="mx-4">
             <div class="flex justify-center"><Chat fcolor="orange-light"/></div>
-            <div class="icon-title">We talk</div>
-            <div class="icon-content">
-                and together figure out the problems, goals, and what brings you added value.
-            </div>
+            <div class="icon-title">{t('HOW.PART1')}</div>
+            <div class="icon-content">{t('HOW.SUBPART1')}</div>
         </div>
         <div class="mx-4 my-12 sm:my-0">
             <div class="flex justify-center steps">
                 <img src="/icons/steps.svg" alt="Steps" width="80" height="80">
             </div>
-            <div class="icon-title">step-by-step</div>
-            <div class="icon-content">
-                we draft the strategies and means to figure out what is necessary to achieve your goal.
-            </div>
+            <div class="icon-title">{t('HOW.PART2')}</div>
+            <div class="icon-content">{t('HOW.SUBPART2')}</div>
         </div>
         <div class="mx-4">
             <div class="flex justify-center steps">
                 <img src="/icons/budget.svg" alt="Budget" width="80" height="80">
             </div>
-            <div class="icon-title">Budget Solutions</div>
-            <div class="icon-content">
-                Payment can be agreed upon either per project or, an hourly rate (minimum 10h).
-            </div>
+            <div class="icon-title">{t('HOW.PART3')}</div>
+            <div class="icon-content">{t('HOW.SUBPART3')}</div>
         </div>
     </div>
 </Wrapper>

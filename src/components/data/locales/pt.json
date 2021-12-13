@@ -101,5 +101,16 @@
     "SUBTITLE": "aplicações que trazem valor.",
     "SUBSUBTITLE": "Avaliação grátis de 30min.",
     "BUTTON": "entre em contacto!"
+  },
+  "HOW": {
+    "TITLE": "como funciona",
+    "SUBTITLE": "\"Soluções pragmáticas para os seus problemas.\"",
+    "DESCRIPTION": "Acredito que todos os desafios devem ser tratados de forma sensata e realista, de uma forma que seja baseada na praticidade ao invés de considerações teóricas. Qualidade é o nome do jogo aqui, todos os resultados serão de acordo com os mais altos critérios.",
+    "PART1": "Falamos",
+    "SUBPART1": "e juntos descobrimos os problemas, objetivos e o que traz valor agregado.",
+    "PART2": "passo-a-passo",
+    "SUBPART2": "nós traçamos as estratégias e meios para descobrir o que é necessário para atingir os seus objetivos.",
+    "PART3": "Orçamentos",
+    "SUBPART3": "O pagamento pode ser combinado por projeto ou por hora (mínimo 10h)."
   }
 }

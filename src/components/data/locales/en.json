@@ -101,5 +101,16 @@
     "SUBTITLE": "applications that bring value.",
     "SUBSUBTITLE": "Contact me for a free 30-min consultation.",
     "BUTTON": "get in touch now!"
+  },
+  "HOW": {
+    "TITLE": "how i work",
+    "SUBTITLE": "\"Pragmatic solutions for your problems.\"",
+    "DESCRIPTION": "I believe all challenges should be dealt with sensibly and realistically, in a way that is based on practicality rather than theoretical considerations. Quality is the name of the game here, all deliverables will be up to the highest standard.",
+    "PART1": "We talk",
+    "SUBPART1": "and together figure out the problems, goals, and what brings you added value.",
+    "PART2": "step-by-step",
+    "SUBPART2": "we draft the strategies and means to figure out what is necessary to achieve your goal.",
+    "PART3": "Budget Solutions",
+    "SUBPART3": "Payment can be agreed upon either per project or, an hourly rate (minimum 10h)."
   }
 }
