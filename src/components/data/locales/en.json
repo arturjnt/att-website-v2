@@ -93,6 +93,9 @@
       "subset": [{ "name": "GDPR (DPIAs)" }, { "name": "Cookie law" }]
     }
   ],
+  "FOOTER": {
+    "TITLE": "Freelance Software Engineer"
+  },
   "HEADER": {
     "TITLE": "discuss<br/>organize<br/>develop!",
     "SUBTITLE": "applications that bring value.",

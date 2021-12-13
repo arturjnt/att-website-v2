@@ -2,13 +2,12 @@
 import Wrapper from './helpers/wrapper.astro';
 
 const email = 'info@artur-teixeira.tech';
+const { t } = Astro.props;
 ---
 <Wrapper id="footer" extraMainClasses="bg-blue text-white">
     <div class="name">Artur Teixeira</div>
     <a href="{`mailto:${email}`}" class="links">{email}</a><br>
-    <a class="links cursor-pointer" href="/">
-        Freelance Software Engineer
-    </a>
+    <a class="links cursor-pointer" href="/">{t('FOOTER.TITLE')}</a>
 </Wrapper>
 <style>
     .name {
