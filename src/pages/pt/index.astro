@@ -13,15 +13,17 @@ import About from '../../components/about.astro'
 import Contact from '../../components/vue/contact.vue'
 import Footer from '../../components/footer.astro';
 
-const l = 'pt'; //! IMPORTANT: SET LANGUAGE
-const title = T(l, 'META.TITLE');
-const description = T(l, 'META.DESCRIPTION');
+const l = 'pt'; //! IMPORTANT TO CHANGE LANGUAGE
+const t = (CODE) => T(l, CODE);
+
+const title = t('META.TITLE');
+const description = t('META.DESCRIPTION');
 ---
 <html lang="{l}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="application-name" content="{T(l, 'META.AUTHOR')}"/>
+    <meta name="application-name" content="{t('META.AUTHOR')}"/>
     <meta name="description" content="{description}">
     
     <!-- LinkedIn Meta -->
@@ -29,7 +31,7 @@ const description = T(l, 'META.DESCRIPTION');
     <meta property="og:image" content="/assets/ogimage.png"/>
     <meta property="og:description" content="{description}"/>
     <meta property="og:url" content="https://artur-teixeira.tech/"/>
-    <meta name="author" content="{T(l, 'META.AUTHOR')}">
+    <meta name="author" content="{t('META.AUTHOR')}">
 
     <title>{title}</title>
     <Favicon />    
@@ -50,13 +52,13 @@ const description = T(l, 'META.DESCRIPTION');
 </head>
 <body>
     <div class="full-page">
-      <Header l="{l}" T="{T}" />
+      <Header l="{l}" t="{t}" />
       <How />
       <Fields skills="{Skills}" />
       <Reviews client:idle />
       <Portfolio client:idle />
-      <About client:idle l="{l}" T="{T}"  />
-      <Contact skills="{Skills}" l="{l}" T="{T}" />
+      <About client:idle t="{t}" />
+      <Contact skills="{Skills}" t="{t}" />
       <Footer client:idle/>
     </div>
 </body>

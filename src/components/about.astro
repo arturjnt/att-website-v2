@@ -1,14 +1,14 @@
 ---
 import Wrapper from './helpers/wrapper.astro';
 
-const { l, T } = Astro.props;
+const { t } = Astro.props;
 ---
 <Wrapper extraMainClasses="py-16 text-blue" extraSubClasses="grid sm:grid-cols-2 md:grid-cols-3">
     <div class="img mb-6 sm:mb-0 sm:mr-6" />
     <div class="md:col-span-2">
-        <div class="title-comp">{T(l, 'ABOUT.TITLE')}</div>
-        <div class="sub-title-comp">{T(l, 'ABOUT.SUBTITLE')}</div>
-        <div class="content">{T(l, 'ABOUT.DESCRIPTION')}</div>
+        <div class="title-comp">{t('ABOUT.TITLE')}</div>
+        <div class="sub-title-comp">{t('ABOUT.SUBTITLE')}</div>
+        <div class="content">{t('ABOUT.DESCRIPTION')}</div>
         <div class="lg:flex">
             <a href="https://www.linkedin.com/in/arturjnt/" target="_blank" rel="noopener">
                 <img src="/icons/linkedin.svg" alt="LinkedIn" width="24" height="25">

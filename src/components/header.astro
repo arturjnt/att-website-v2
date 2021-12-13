@@ -2,18 +2,19 @@
 import Wrapper from './helpers/wrapper.astro';
 import ChangeLanguage from './helpers/changeLanguage.astro';
 
-const { l, T } = Astro.props;
+// Need l for design change in the title
+const { l, t } = Astro.props;
 ---
 <Wrapper id="header" extraMainClasses="text-white" extraSubClasses="z-10">
     <ChangeLanguage />
     <div class="{l=='pt' ? 'title mb-2 header-title-pt-override' : 'title mb-2'}">
-        {T(l, 'HEADER.TITLE')}
+        {t('HEADER.TITLE')}
     </div>
-    <div class="subtitle">{T(l, 'HEADER.SUBTITLE')}</div>
-    <div class="subsubtitle">{T(l, 'HEADER.SUBSUBTITLE')}</div>
+    <div class="subtitle">{t('HEADER.SUBTITLE')}</div>
+    <div class="subsubtitle">{t('HEADER.SUBSUBTITLE')}</div>
     <div class="mt-4">
         <a href="#contact" class="header-b bg-orange">
-            {T(l, 'HEADER.BUTTON')}
+            {t('HEADER.BUTTON')}
         </a>
     </div>
 </Wrapper>

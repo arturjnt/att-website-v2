@@ -4,7 +4,7 @@
     class="my-container p-4 sm:px-14 py-16 text-blue bg-blue-light"
   >
     <div class="mw w-full">
-      <div class="title-comp mb-4">{{ t("CONTACT.TITLE") }}</div>
+      <div class="title-comp mb-4">{{ vuet("CONTACT.TITLE") }}</div>
       <form
         class="flex flex-col"
         accept-charset="UTF-8"
@@ -13,24 +13,24 @@
       >
         <div class="mygrid">
           <label class="main-label" for="email"
-            >{{ t("CONTACT.EMAIL") }}<span>*</span></label
+            >{{ vuet("CONTACT.EMAIL") }}<span>*</span></label
           >
           <input id="email" type="email" v-model="email" required="required" />
         </div>
         <div class="mygrid">
           <label class="main-label" for="name"
-            >{{ t("CONTACT.NAME") }}<span>*</span></label
+            >{{ vuet("CONTACT.NAME") }}<span>*</span></label
           >
           <input id="name" type="text" v-model="name" required="required" />
         </div>
         <div class="mygrid">
           <label class="main-label" for="company_name"
-            >{{ t("CONTACT.COMPANY_NAME") }}
+            >{{ vuet("CONTACT.COMPANY_NAME") }}
           </label>
           <input id="company_name" type="text" v-model="cname" />
         </div>
         <div class="mygrid">
-          <div class="main-label">{{ t("CONTACT.AREAS_OF_INTEREST") }}</div>
+          <div class="main-label">{{ vuet("CONTACT.AREAS_OF_INTEREST") }}</div>
           <div class="sm:ml-2 sm:col-span-2">
             <div v-for="(area, index) in skills" :key="index">
               <label class="checkbox check-label" :for="area.name">
@@ -64,7 +64,7 @@
         </div>
         <div class="mygrid">
           <label class="main-label" for="message"
-            >{{ t("CONTACT.MESSAGE") }}<span>*</span></label
+            >{{ vuet("CONTACT.MESSAGE") }}<span>*</span></label
           >
           <textarea
             id="message"
@@ -74,9 +74,9 @@
           ></textarea>
         </div>
         <div class="m-4 text-center text-orange-dark" v-show="isSuccess">
-          {{ t("CONTACT.SUCCESS") }}
+          {{ vuet("CONTACT.SUCCESS") }}
         </div>
-        <button type="submit">{{ t("CONTACT.SEND") }}</button>
+        <button type="submit">{{ vuet("CONTACT.SEND") }}</button>
       </form>
     </div>
   </div>
@@ -84,7 +84,7 @@
 <script>
 export default {
   name: "Contact",
-  props: ["skills", "l", "T"],
+  props: ["skills", "t"],
   data() {
     return {
       name: "",
@@ -96,8 +96,8 @@ export default {
     };
   },
   methods: {
-    t(CODE) {
-      return this.T(this.l, CODE);
+    vuet(CODE) {
+      return this.t(CODE);
     },
     onSubmit() {
       let data = `
