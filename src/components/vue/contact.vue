@@ -84,9 +84,10 @@
   </div>
 </template>
 <script>
+import T from "../js/i18n.js";
 export default {
   name: "Contact",
-  props: ["t"],
+  props: ["l"],
   data() {
     return {
       name: "",
@@ -99,7 +100,7 @@ export default {
   },
   methods: {
     vuet(CODE) {
-      return this.t(CODE);
+      return T(this.l, CODE);
     },
     onSubmit() {
       let data = `
