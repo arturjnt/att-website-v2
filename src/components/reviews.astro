@@ -45,11 +45,11 @@ const {t} = Astro.props;
     <div class="grid md:grid-cols-3">
         {reviews.map(r => <div class="border-2 border-orange rounded-3xl p-4 m-2">
             <div class="flex mb-4">
-                <img src="{`/reviews/${r.picUrl}`}" alt="{r.name}">
+                <img src={`/reviews/${r.picUrl}`} alt={r.name}>
                 <div class="self-center ml-2">
                     <div class="text-blue-dark font-bold">{r.name}</div>
                     <div class="italic">{r.title}</div>
-                    <a href="{r.website}" target="_blank" rel="noopener" class="italic underline">
+                    <a href={r.website} target="_blank" rel="noopener" class="italic underline">
                         {r.companyName}
                     </a>
                 </div>

@@ -52,12 +52,12 @@ const {t} = Astro.props;
     <div class="title-comp">{t('PORTFOLIO.TITLE')}</div>
     <div class="sub-title-comp mb-8">{t('PORTFOLIO.SUBTITLE')}</div>
     <div class="grid sm:grid-cols-2 md:grid-cols-3">
-        {portfolio.map(p => <a href="{p.url}" target="_blank" rel="noopener" class="block border-2 rounded-md m-1 border-blue-dark">
+        {portfolio.map(p => <a href={p.url} target="_blank" rel="noopener" class="block border-2 rounded-md m-1 border-blue-dark">
             <div class="text-white px-2 py-1 bg-blue-dark">
                 <div class="font-bold">{p.companyName}</div>
                 <div>{t('PORTFOLIO.WORKS.' + p.name)}</div>
             </div>
-            <div style="{`background-image: url(${p.picUrl})`}" class="img"></div>
+            <div style={`background-image: url(${p.picUrl})`} class="img"></div>
             <div class="hidden">
                 <div class="flex self-center">{t('PORTFOLIO.WORKS.' + p.content)}</div>
             </div>

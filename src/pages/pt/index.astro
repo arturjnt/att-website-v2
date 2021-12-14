@@ -18,26 +18,26 @@ const t = (CODE) => T(l, CODE);
 const title = t('META.TITLE');
 const description = t('META.DESCRIPTION');
 ---
-<html lang="{l}">
+<html lang={l}>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="application-name" content="{t('META.AUTHOR')}"/>
-    <meta name="description" content="{description}">
+    <meta name="application-name" content={t('META.AUTHOR')}/>
+    <meta name="description" content={description}>
     
     <!-- LinkedIn Meta -->
-    <meta property="og:title" content="{title}"/>
+    <meta property="og:title" content={title}/>
     <meta property="og:image" content="/assets/ogimage.png"/>
-    <meta property="og:description" content="{description}"/>
+    <meta property="og:description" content={description}/>
     <meta property="og:url" content="https://artur-teixeira.tech/"/>
-    <meta name="author" content="{t('META.AUTHOR')}">
+    <meta name="author" content={t('META.AUTHOR')}>
 
     <title>{title}</title>
-    <Favicon />    
-    <link rel="stylesheet" href="/style/global.css">
-    <link rel="stylesheet" href="/style/header.css">
-    <link rel="stylesheet" href="/style/comp.css">
-    <link rel="stylesheet" href="/style/fields.css">
+    <Favicon />
+    <link rel="stylesheet" type="text/css" href={Astro.resolve('../../styles/global.css')} /> 
+    <link rel="stylesheet" type="text/css" href={Astro.resolve('../../styles/header.css')} /> 
+    <link rel="stylesheet" type="text/css" href={Astro.resolve('../../styles/comp.css')} /> 
+    <link rel="stylesheet" type="text/css" href={Astro.resolve('../../styles/fields.css')} /> 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DEBRCHVL82"></script>
@@ -51,14 +51,14 @@ const description = t('META.DESCRIPTION');
 </head>
 <body>
     <div class="full-page">
-      <Header l="{l}" t="{t}" />
-      <How t="{t}" />
-      <Fields t="{t}" />
-      <Reviews t="{t}" client:idle />
-      <Portfolio t="{t}" client:idle />
-      <About t="{t}" client:idle />
-      <Contact l="{l}" client:load />
-      <Footer l="{l}" t="{t}" client:idle/>
+      <Header l={l} t={t} />
+      <How t={t} />
+      <Fields t={t} />
+      <Reviews t={t} client:idle />
+      <Portfolio t={t} client:idle />
+      <About t={t} client:idle />
+      <Contact l={l} client:load />
+      <Footer l={l} t={t} client:idle/>
     </div>
 </body>
 </html>

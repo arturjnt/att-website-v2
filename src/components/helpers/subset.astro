@@ -1,8 +1,8 @@
 ---
 const { subset } = Astro.props;
-
-function readSubs (sub) {
-    return sub.map (s => {
+---
+<div class="subset hidden mx-4 my-5">
+    {subset.map (s => {
         let add = '';
         if (s.subset && s.subset.length > 0) {
             s.subset.forEach(s => add += `<li>${s.name}</li>`);
@@ -10,9 +10,5 @@ function readSubs (sub) {
         return  <div class="sub py-4 border-b-2 border-blue-dark border-opacity-20">{s.name}
                     <div class="subsub my-1 ml-3"><ul class="list-disc list-inside">{add}</ul></div>
                 </div>;
-    })
-}
----
-<div class="subset hidden mx-4 my-5">
-    {readSubs(subset)}
+    })}
 </div>
