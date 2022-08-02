@@ -32,7 +32,7 @@
         { "name": "HTML" },
         {
           "name": "CSS",
-          "subset": [{ "name": "SASS" }, { "name": "Tailwind CSS" }]
+          "subset": [{ "name": "Sass" }, { "name": "tailwindcss" }]
         },
         {
           "name": "Javascript",
@@ -54,43 +54,52 @@
       "name": "Infrastructure",
       "class": "bg-orange-light",
       "subset": [
-        { "name": "AWS (S3, EC2, etc)" },
+        { "name": "AWS" },
+        { "name": "Azure" },
         { "name": "OVH (VPS)" },
-        { "name": "Firebase (Server-less functions)" }
+        { "name": "Firebase" },
+        { "name": "Grafana" }
       ]
     },
     {
       "name": "CI/CD",
       "class": "bg-orange",
-      "subset": [{ "name": "Jenkins" }]
+      "subset": [
+        { "name": "Jenkins" },
+        { "name": "CircleCI" },
+        { "name": "Linux CLI" }
+      ]
     },
     {
       "name": "Database",
       "class": "bg-orange",
       "subset": [
         { "name": "NoSQL" },
-        { "name": "MongoDB" },
         { "name": "SQL" },
         { "name": "Firebase" },
         { "name": "GraphQL" }
       ]
     },
     {
-      "name": "Management Tech",
+      "name": "Management Tools",
       "class": "bg-orange-light",
       "subset": [
         { "name": "Git" },
         { "name": "JIRA" },
         { "name": "Trello" },
-        { "name": "Miro" },
         { "name": "Figma" },
+        { "name": "ProductBoard" },
         { "name": "Sketch" }
       ]
     },
     {
       "name": "Security Advisory",
       "class": "bg-orange",
-      "subset": [{ "name": "GDPR (DPIAs)" }, { "name": "Cookie law" }]
+      "subset": [
+        { "name": "GDPR (DPIAs)" },
+        { "name": "Pen-Tests" },
+        { "name": "Cookie law" }
+      ]
     }
   ],
   "FOOTER": {

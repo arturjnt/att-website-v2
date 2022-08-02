@@ -32,7 +32,7 @@
         { "name": "HTML" },
         {
           "name": "CSS",
-          "subset": [{ "name": "SASS" }, { "name": "Tailwind CSS" }]
+          "subset": [{ "name": "Sass" }, { "name": "tailwindcss" }]
         },
         {
           "name": "Javascript",
@@ -54,15 +54,21 @@
       "name": "Infra-estrutura",
       "class": "bg-orange-light",
       "subset": [
-        { "name": "AWS (S3, EC2, etc)" },
+        { "name": "AWS" },
+        { "name": "Azure" },
         { "name": "OVH (VPS)" },
-        { "name": "Firebase (Funções server-less)" }
+        { "name": "Firebase" },
+        { "name": "Grafana" }
       ]
     },
     {
       "name": "CI/CD",
       "class": "bg-orange",
-      "subset": [{ "name": "Jenkins" }]
+      "subset": [
+        { "name": "Jenkins" },
+        { "name": "CircleCI" },
+        { "name": "Linux CLI" }
+      ]
     },
     {
       "name": "Base de Dados",
@@ -76,21 +82,25 @@
       ]
     },
     {
-      "name": "Tech. de Gestão",
+      "name": "Ferr. de Gestão",
       "class": "bg-orange-light",
       "subset": [
         { "name": "Git" },
         { "name": "JIRA" },
         { "name": "Trello" },
-        { "name": "Miro" },
         { "name": "Figma" },
+        { "name": "ProductBoard" },
         { "name": "Sketch" }
       ]
     },
     {
       "name": "Consultoria IT",
       "class": "bg-orange",
-      "subset": [{ "name": "GDPR (DPIAs)" }, { "name": "Lei das Cookies" }]
+      "subset": [
+        { "name": "GDPR (DPIAs)" },
+        { "name": "Pen-Tests" },
+        { "name": "Lei das Cookies" }
+      ]
     }
   ],
   "FOOTER": {
